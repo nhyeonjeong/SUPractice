@@ -7,6 +7,16 @@
 
 import SwiftUI
 
+struct TitleModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.title2)
+            .fontWeight(.bold)
+            .multilineTextAlignment(.leading)
+            .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
 struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading) {
@@ -17,34 +27,17 @@ struct ContentView: View {
                             Image("firework")
                             
                             Text("포인트를 더 모을 수 있게 맞춤 혜택을 추천해드릴까요?")
-                                .font(.title2)
-                                .fontWeight(.bold)
-                                .multilineTextAlignment(.leading)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-//                                .border(.yellow)
+                                .modifier(TitleModifier())
                             
                             VStack(alignment: .leading) {
-                                HStack {
-                                    Image("calendar")
-                                    
-                                    Text("매일 포인트 받는 출석체크,퀴즈")
-                                }
-                                HStack {
-                                    Image("newEvent")
-                                    
-                                    Text("새로운 이벤트")
-                                }
-                                HStack {
-                                    Image("star")
-                                    
-                                    Text("미션 추천")
-                                }
+                                recommendLine(image: "calendar", text: "매일 포인트 받는 출석체크, 퀴즈")
+                                recommendLine(image: "newEvent", text: "새로운 이벤트")
+                                recommendLine(image: "star", text: "미션 추천")
                             }
                             .font(.subheadline)
                         }
                         Spacer()
                     }
-                    
                 })
                 .frame(maxWidth: .infinity)
 //                .border(.green)
@@ -60,15 +53,7 @@ struct ContentView: View {
                 }
                 .padding(.bottom, 24)
                     
-                Button("동의하기") {
-                    
-                }
-                .foregroundStyle(.primary)
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(.blue)
-                .cornerRadius(16)
-                .padding(.bottom, 16)
+                BlueButton()
                 
                 Text("다음에 하기")
                 
@@ -78,6 +63,13 @@ struct ContentView: View {
         }
         .padding(8)
         
+    }
+    
+    func recommendLine(image: String, text: String) -> some View {
+        HStack {
+            Image(image)
+            Text(text)
+        }
     }
 }
 

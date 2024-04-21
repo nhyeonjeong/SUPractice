@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B3AFCC62BD5D4200069773F /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3AFCC52BD5D4200069773F /* CategoryView.swift */; };
 		8B428CE52BCE1D4200FD1B69 /* SUPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B428CE42BCE1D4200FD1B69 /* SUPracticeApp.swift */; };
 		8B428CE72BCE1D4200FD1B69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B428CE62BCE1D4200FD1B69 /* ContentView.swift */; };
 		8B428CE92BCE1D4400FD1B69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B428CE82BCE1D4400FD1B69 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B3AFCC52BD5D4200069773F /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		8B428CE12BCE1D4200FD1B69 /* SUPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B428CE42BCE1D4200FD1B69 /* SUPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUPracticeApp.swift; sourceTree = "<group>"; };
 		8B428CE62BCE1D4200FD1B69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B3AFCC42BD5D3FB0069773F /* CategoryUpgrade */ = {
+			isa = PBXGroup;
+			children = (
+				8B3AFCC52BD5D4200069773F /* CategoryView.swift */,
+			);
+			path = CategoryUpgrade;
+			sourceTree = "<group>";
+		};
 		8B428CD82BCE1D4200FD1B69 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +63,7 @@
 		8B428CE32BCE1D4200FD1B69 /* SUPractice */ = {
 			isa = PBXGroup;
 			children = (
+				8B3AFCC42BD5D3FB0069773F /* CategoryUpgrade */,
 				8B428CE42BCE1D4200FD1B69 /* SUPracticeApp.swift */,
 				8B428CE62BCE1D4200FD1B69 /* ContentView.swift */,
 				8B428D062BD09A6800FD1B69 /* BlueButton.swift */,
@@ -143,6 +154,7 @@
 				8B428CE72BCE1D4200FD1B69 /* ContentView.swift in Sources */,
 				8B428CE52BCE1D4200FD1B69 /* SUPracticeApp.swift in Sources */,
 				8B428D072BD09A6800FD1B69 /* BlueButton.swift in Sources */,
+				8B3AFCC62BD5D4200069773F /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
